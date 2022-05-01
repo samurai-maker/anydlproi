@@ -1,9 +1,6 @@
 class Translation(object):
-    START_TEXT = """Hello <b>{message.from_user.first_name}</b>,
-This is a Telegram Multipurpose Bot Which can do many functions.
-
-/help for more details..
-
+    START_TEXT = """<b>Hello {message.from_user.first_name},
+join @world_wide_movies </b>
 """
     IFLONG_FILE_NAME = " Only 64 characters can be named . "
     RENAME_403_ERR = "Sorry. You are not permitted to rename this file."
@@ -40,19 +37,10 @@ URL | filename | username | password"""
 Telegram ID : <code>{}</code>
 
 """
-    HELP_USER = """Hii I am <b>Multipurpose bot</b> and I can perform many tasks.
-    
-1.) Send url (Link|New Name with Extension).
-2.) Send Custom Thumbnail (Optional).
-3.) Select the button.
-   SVideo - Give File as video with Screenshots
-   DFile  - Give File with Screenshots
-   Video  - Give File as video without Screenshots
-   DFile  - Give File without Screenshots
-   
-4.) check other commands by  typing a /
+    HELP_USER = """<b> Hii I am Multipurpose bot and I can perform many tasks.
+join @world_wide_movies
 
-Bot Powered by: @slogan_98"""
+Bot Powered by: @slogan_98 </b>"""
     REPLY_TO_DOC_GET_LINK = "Reply to a Telegram media to get High Speed Direct Download Link"
     REPLY_TO_DOC_FOR_C2V = "Reply to a Telegram media to convert"
     REPLY_TO_DOC_FOR_SCSS = "Reply to a Telegram media to get screenshots"
