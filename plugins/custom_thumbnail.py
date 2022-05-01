@@ -39,7 +39,7 @@ async def generate_custom_thumbnail(bot, update):
         reply_message = update.reply_to_message
         if reply_message.media_group_id is not None:
             download_location = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id) + "/" + str(reply_message.media_group_id) + "/"
-            save_final_image = "https://telegra.ph/file/072a31565744a9093bbba.jpg"
+            save_final_image = download_location + str(round(time.time())) + ".jpg"
             list_im = os.listdir(download_location)
             if len(list_im) == 2:
                 imgs = [ Image.open(download_location + i) for i in list_im ]
@@ -102,7 +102,7 @@ async def save_photo(bot, update):
         )
     else:
         # received single photo
-        download_location = "https://telegra.ph/file/072a31565744a9093bbba.jpg"
+        download_location = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id) + ".jpg"
         await bot.download_media(
             message=update,
             file_name=download_location
