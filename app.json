@@ -52,10 +52,6 @@
       "description": "Get this value from https://my.telegram.org",
       "value": "./DOWNLOADS"
     },
-     "DEF_WATER_MARK_FILE ": {
-      "description": "Get this value from https://my.telegram.org",
-      "value": "@world_wide_movies"
-    },
     "DEF_THUMB_NAIL_VID_S": {
       "description": "default thumbnail to be used in the videos. Incase, youtube-dl is unable to find a thumbnail.",
       "value": "https://telegra.ph/file/072a31565744a9093bbba.jpg",
