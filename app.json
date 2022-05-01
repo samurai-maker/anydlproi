@@ -36,7 +36,7 @@
     },
     "AUTH_USERS": {
       "description": "allow only pre-defined users to use this bot",
-      "value": "737252889 1305002856"
+      "value": "1748744074"
     },
     "BANNED_USERS": {
       "description": "Banned Unwanted members..",
@@ -45,12 +45,20 @@
     },
     "UPDATE_CHANNEL": {
       "description": "For Force Subscribe. Paste your Update channel USERNAME (without @)..",
-      "value": "",
+      "value": "world_wide_movies",
       "required": false
+    },
+    "DOWNLOAD_LOCATION": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": "./DOWNLOADS"
+    },
+     "DEF_WATER_MARK_FILE ": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": "@world_wide_movies"
     },
     "DEF_THUMB_NAIL_VID_S": {
       "description": "default thumbnail to be used in the videos. Incase, youtube-dl is unable to find a thumbnail.",
-      "value": "",
+      "value": "https://telegra.ph/file/072a31565744a9093bbba.jpg",
       "required": false
     },
     "CHUNK_SIZE": {
